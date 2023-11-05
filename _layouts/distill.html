@@ -3,7 +3,6 @@
 <html>
   <head>
     {%- include head.html %}
-
     {% include scripts/jquery.html %}
     {% include scripts/mathjax.html %}
     <!-- Distill js -->
@@ -96,8 +95,6 @@
         <d-footnote-list></d-footnote-list>
         <d-citation-list></d-citation-list>
       </d-appendix>
-
-      <d-bibliography src="{{ page.bibliography | prepend: '/assets/bibliography/' | relative_url }}"></d-bibliography>
 
       {%- if site.disqus_shortname and page.disqus_comments -%}
         {% include disqus.html %}
